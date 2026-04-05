@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        TABLE
+            CATION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.04</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem molestias qui praesentium repellat, natus perspiciatis ipsa odio facilis, cum quibusdam, quidem eligendi eos enim voluptas cupiditate numquam quod fugit!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo harum. Autem fugiat ad labore et illum laboriosam corporis dolores. Tempore veritatis debitis atque dolore quod animi iste obcaecati reprehenderit.,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores eius illo est reprehenderit iste libero eligendi voluptatem inventore at. Soluta atque reprehenderit odio aperiam, voluptates rerum similique obcaecati. Optio, dicta?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam architecto porro nesciunt, facere in eos quaerat quibusdam adipisci nulla illum nam temporibus quidem numquam, perferendis dolorem ratione fugiat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, explicabo recusandae nesciunt, magnam quisquam quaerat fugiat ab cumque neque numquam velit inventore odit iusto ad reprehenderit! Perspiciatis neque quos voluptatem.,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit cumque, rerum distinctio id molestias nesciunt hic est voluptas vel nihil quod fugit deleniti esse ducimus error mollitia dolorum. Aspernatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem molestias qui praesentium repellat, natus perspiciatis ipsa odio facilis, cum quibusdam, quidem eligendi eos enim voluptas cupiditate numquam quod fugit!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo harum. Autem fugiat ad labore et illum laboriosam corporis dolores. Tempore veritatis debitis atque dolore quod animi iste obcaecati reprehenderit.,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores eius illo est reprehenderit iste libero eligendi voluptatem inventore at. Soluta atque reprehenderit odio aperiam, voluptates rerum similique obcaecati. Optio, dicta?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam architecto porro nesciunt, facere in eos quaerat quibusdam adipisci nulla illum nam temporibus quidem numquam, perferendis dolorem ratione fugiat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, explicabo recusandae nesciunt, magnam quisquam quaerat fugiat ab cumque neque numquam velit inventore odit iusto ad reprehenderit! Perspiciatis neque quos voluptatem.,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit cumque, rerum distinctio id molestias nesciunt hic est voluptas vel nihil quod fugit deleniti esse ducimus error mollitia dolorum. Aspernatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem molestias qui praesentium repellat, natus perspiciatis ipsa odio facilis, cum quibusdam, quidem eligendi eos enim voluptas cupiditate numquam quod fugit!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo harum. Autem fugiat ad labore et illum laboriosam corporis dolores. Tempore veritatis debitis atque dolore quod animi iste obcaecati reprehenderit.,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores eius illo est reprehenderit iste libero eligendi voluptatem inventore at. Soluta atque reprehenderit odio aperiam, voluptates rerum similique obcaecati. Optio, dicta?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam architecto porro nesciunt, facere in eos quaerat quibusdam adipisci nulla illum nam temporibus quidem numquam, perferendis dolorem ratione fugiat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, explicabo recusandae nesciunt, magnam quisquam quaerat fugiat ab cumque neque numquam velit inventore odit iusto ad reprehenderit! Perspiciatis neque quos voluptatem.,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit cumque, rerum distinctio id molestias nesciunt hic est voluptas vel nihil quod fugit deleniti esse ducimus error mollitia dolorum. Aspernatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem molestias qui praesentium repellat, natus perspiciatis ipsa odio facilis, cum quibusdam, quidem eligendi eos enim voluptas cupiditate numquam quod fugit!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo harum. Autem fugiat ad labore et illum laboriosam corporis dolores. Tempore veritatis debitis atque dolore quod animi iste obcaecati reprehenderit.,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores eius illo est reprehenderit iste libero eligendi voluptatem inventore at. Soluta atque reprehenderit odio aperiam, voluptates rerum similique obcaecati. Optio, dicta?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam architecto porro nesciunt, facere in eos quaerat quibusdam adipisci nulla illum nam temporibus quidem numquam, perferendis dolorem ratione fugiat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, explicabo recusandae nesciunt, magnam quisquam quaerat fugiat ab cumque neque numquam velit inventore odit iusto ad reprehenderit! Perspiciatis neque quos voluptatem.,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit cumque, rerum distinctio id molestias nesciunt hic est voluptas vel nihil quod fugit deleniti esse ducimus error mollitia dolorum. Aspernatur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem molestias qui praesentium repellat, natus perspiciatis ipsa odio facilis, cum quibusdam, quidem eligendi eos enim voluptas cupiditate numquam quod fugit!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, explicabo harum. Autem fugiat ad labore et illum laboriosam corporis dolores. Tempore veritatis debitis atque dolore quod animi iste obcaecati reprehenderit.,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores eius illo est reprehenderit iste libero eligendi voluptatem inventore at. Soluta atque reprehenderit odio aperiam, voluptates rerum similique obcaecati. Optio, dicta?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam architecto porro nesciunt, facere in eos quaerat quibusdam adipisci nulla illum nam temporibus quidem numquam, perferendis dolorem ratione fugiat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, explicabo recusandae nesciunt, magnam quisquam quaerat fugiat ab cumque neque numquam velit inventore odit iusto ad reprehenderit! Perspiciatis neque quos voluptatem.,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit cumque, rerum distinctio id molestias nesciunt hic est voluptas vel nihil quod fugit deleniti esse ducimus error mollitia dolorum. Aspernatur?</p>
+</body>
+</html>
